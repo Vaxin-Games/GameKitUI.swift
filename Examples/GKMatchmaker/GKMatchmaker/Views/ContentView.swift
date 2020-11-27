@@ -15,8 +15,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack() {
+                Spacer()
                 Text(self.viewModel.currentState)
                     .font(.title)
+                Spacer()
+                Button("Rematch", action: {})
+                Spacer()
             }
             .navigationBarTitle(Text("GameKit Matchmaker"), displayMode: .inline)
             .onAppear() {
